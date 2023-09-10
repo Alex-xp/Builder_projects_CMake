@@ -3,4 +3,5 @@
 002-static_libs/build
 003-shared_libs/build
 004-add_sfml/build
-004-add_sfml/3TH_PARTY/*
+004-add_sfml/3TH_PARTY/SFML-2.6.0-doc
+004-add_sfml/3TH_PARTY/SFML
