@@ -1,0 +1,6 @@
+000-small_project/build
+001-solution/build
+002-static_libs/build
+003-shared_libs/build
+004-add_sfml/build
+004-add_sfml/3TH_PARTY/*
