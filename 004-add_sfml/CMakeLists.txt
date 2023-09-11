@@ -74,7 +74,7 @@ set(LIBS )
 if(${_DEBUG})
     set(LIBS ${LIBS} sfml-system-d sfml-graphics-d sfml-window-d sfml-network-d sfml-audio-d)
 else()
-    set(LIBS ${LIBS} sfml-system sfml-graphic sfml-window sfml-network sfml-audio)
+    set(LIBS ${LIBS} sfml-system sfml-graphics sfml-window sfml-network sfml-audio)
 endif()
 
 
