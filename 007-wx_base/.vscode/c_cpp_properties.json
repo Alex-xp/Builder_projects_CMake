@@ -1,0 +1,52 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include/**",
+
+                "${workspaceFolder}/build/wxWidgets/linux_debug/lib/gcc_x64_dll/mswud",
+                "${workspaceFolder}/build/wxWidgets/linux_debug/lib/gcc_x64_dll/mswud/**",
+                "${workspaceFolder}/build/wxWidgets/linux_release/lib/gcc_x64_dll/mswu",
+                "${workspaceFolder}/build/wxWidgets/linux_release/lib/gcc_x64_dll/mswu/**",
+
+                "${workspaceFolder}/3TH_PARTY/wxWidgets/include",
+                "${workspaceFolder}/3TH_PARTY/wxWidgets/include/**"
+            ],
+            "defines": [
+                "_DEBUG"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "gcc-x64"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include/**",
+
+                "${workspaceFolder}/build/wxWidgets/windows_debug/lib/gcc_x64_dll/mswud",
+                "${workspaceFolder}/build/wxWidgets/windows_debug/lib/gcc_x64_dll/mswud/**",
+                "${workspaceFolder}/build/wxWidgets/windows_release/lib/gcc_x64_dll/mswu",
+                "${workspaceFolder}/build/wxWidgets/windows_release/lib/gcc_x64_dll/mswu/**",
+
+                "${workspaceFolder}/3TH_PARTY/wxWidgets/include",
+                "${workspaceFolder}/3TH_PARTY/wxWidgets/include/**",
+
+                "C:/msys64/mingw64/include/**",
+                "C:/msys64/mingw64/include/c++/13.2.0"
+            ],
+            "defines": [
+                "_DEBUG"
+            ],
+            "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "gcc-x64",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}
