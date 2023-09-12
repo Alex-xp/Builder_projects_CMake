@@ -64,7 +64,7 @@ function(setBaseCompillerOptions)
     set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib PARENT_SCOPE)
     set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR}/bin PARENT_SCOPE)
     
-endfunction(setCompillerOptions)
+endfunction(setBaseCompillerOptions)
 
 
 
