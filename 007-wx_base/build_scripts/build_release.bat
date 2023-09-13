@@ -24,7 +24,7 @@ call xcopy /s wxWidgets\windows_release\lib\gcc_x64_dll\*.a release\lib\*.a /Y
 call xcopy /s wxWidgets\windows_release\lib\gcc_x64_dll\*.dll release\bin\*.dll /Y
 
 REM СБОРКА ПРОЕКТА
-call cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release ../
+call cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release -DGUI=1 ../
 call mingw32-make -f Makefile
 
 cd ..

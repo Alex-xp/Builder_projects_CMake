@@ -26,7 +26,8 @@ setLibsSolutionOptions()
 ###################################################################################################################################
 # СБОРКА
 
-add_subdirectory(project1)
+add_subdirectory(ui_design)
+add_subdirectory(application)
 
 
 

@@ -23,7 +23,7 @@ call xcopy /s wxWidgets\windows_debug\lib\gcc_x64_dll\*.a debug\lib\*.a /Y
 call xcopy /s wxWidgets\windows_debug\lib\gcc_x64_dll\*.dll debug\bin\*.dll /Y
 
 REM СБОРКА ПРОЕКТА
-call cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug ../
+call cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug -DGUI=1 ../
 call mingw32-make -f Makefile
 
 cd ..
