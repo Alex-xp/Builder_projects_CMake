@@ -9,12 +9,18 @@
 
 #include <wx/artprov.h>
 #include <wx/xrc/xmlres.h>
+#include <wx/button.h>
 #include <wx/string.h>
-#include <wx/frame.h>
+#include <wx/bitmap.h>
+#include <wx/image.h>
+#include <wx/icon.h>
 #include <wx/gdicmn.h>
 #include <wx/font.h>
 #include <wx/colour.h>
 #include <wx/settings.h>
+#include <wx/sizer.h>
+#include <wx/panel.h>
+#include <wx/frame.h>
 
 ///////////////////////////////////////////////////////////////////////////
 
@@ -27,6 +33,13 @@ class ui_MainFrame : public wxFrame
 	private:
 
 	protected:
+		wxPanel* m_panel1;
+		wxButton* m_btn_about;
+		wxPanel* m_panel2;
+
+		// Virtual event handlers, override them in your derived class
+		virtual void OnClickBtnAbout( wxCommandEvent& event ) { event.Skip(); }
+
 
 	public:
 
