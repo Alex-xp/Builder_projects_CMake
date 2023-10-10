@@ -1,0 +1,100 @@
+{
+    // Документацию по формату tasks.json см.
+    // по адресу https://go.microsoft.com/fwlink/?LinkId=733558
+    "version": "2.0.0",
+    "tasks": [
+
+        //*****************************************************************************************
+        // BUILD 3TH_PARTY ************************************************************************
+        {
+            "type": "shell",
+            "label": "BUILD 3TH_PARTY",
+            "windows": {
+                "command": "${workspaceFolder}/../build_scripts/3th_build.bat",
+                "args": [],
+                "options": {},
+                "cwd": "${workspaceFolder}/.."
+            },
+            "linux":{
+                "command": "${workspaceFolder}/../build_scripts/3th_build.sh",
+                "args": [],
+                "options": {},
+                "cwd": "${workspaceFolder}/.."
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+
+        //*****************************************************************************************
+        // DEBUG **********************************************************************************
+        {
+            "type": "shell",
+            "label": "BUILD DEBUG",
+            "windows": {
+                "command": "${workspaceFolder}/../build_scripts/build_debug.bat",
+                "args": [],
+                "options": {},
+                "cwd": "${workspaceFolder}/.."
+            },
+            "linux":{
+                "command": "${workspaceFolder}/../build_scripts/build_debug.sh",
+                "args": [],
+                "options": {},
+                "cwd": "${workspaceFolder}/.."
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+
+        //*****************************************************************************************
+        // RELEASE ********************************************************************************
+        {
+            "type": "shell",
+            "label": "BUILD RELEASE",
+            "windows": {
+                "command": "${workspaceFolder}/../build_scripts/build_release.bat",
+                "args": [],
+                "options": {},
+                "cwd": "${workspaceFolder}/.."
+            },
+            "linux": {
+                "command": "${workspaceFolder}/../build_scripts/build_release.sh",
+                "args": [],
+                "options": {},
+                "cwd": "${workspaceFolder}/.."
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+
+        //*****************************************************************************************
+        // CLEAN **********************************************************************************
+        {
+            "type": "shell",
+            "label": "CLEAN",
+            "windows": {
+                "command": "${workspaceFolder}/../build_scripts/clean.bat",
+                "args": [],
+                "options": {},
+                "cwd": "${workspaceFolder}/.."
+            },
+            "linux": {
+                "command": "${workspaceFolder}/../build_scripts/clean.sh",
+                "args": [],
+                "options": {},
+                "cwd": "${workspaceFolder}/.."
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+    
+}
