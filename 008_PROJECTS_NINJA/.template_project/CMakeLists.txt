@@ -16,8 +16,6 @@ add_compile_options(-std=c++20 )
 ###################################################################################################################################
 # НАСТРОЙКИ СТОРОННИХ БИБЛИОТЕК
 
-# include(cmake_config/sfml.cmake)
-# include(cmake_config/wxWidgets.cmake)
 include(cmake_config/boost.cmake)
 
 
