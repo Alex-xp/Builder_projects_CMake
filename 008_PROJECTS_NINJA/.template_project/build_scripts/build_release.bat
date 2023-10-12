@@ -10,7 +10,7 @@ call rm %BIN_DIR_RELEASE%\bin\program
 
 REM СБОРКА ПРОЕКТА
 cd %BIN_DIR_RELEASE%
-call cmake -G "Ninja" -DCMAKE_BUILD_TYPE=Release -DGUI=ON %ROOT_DIR%
+call cmake -G "Ninja" -DCMAKE_BUILD_TYPE=Release -DGUI=OFF %ROOT_DIR%
 call ninja
 
 REM ################################################################################################
